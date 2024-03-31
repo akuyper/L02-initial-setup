@@ -1,0 +1,281 @@
+---
+title: "L02 Initial Setup"
+subtitle: "Data Science 3 with R (STAT 301-3)"
+author: "YOUR NAME"
+pagetitle: "L02 YOUR NAME"
+date: today
+
+format:
+  html:
+    toc: true
+    toc-depth: 4
+    toc-location: left
+    embed-resources: true
+    code-fold: false
+    link-external-newwindow: true
+
+execute:
+  warning: false
+  
+from: markdown+emoji
+reference-location: margin
+citation-location: margin
+---
+
+
+::: {.callout-tip icon=false}
+
+## Github Repo Link
+
+To link to your github **repo**sitory, appropriately edit the example link below. Meaning replace `https://your-github-repo-url` with your github repo url. Suggest verifying the link works before submitting.
+
+[https://your-github-repo-url](https://your-github-repo-url)
+
+:::
+
+
+## Overview
+
+The goal of this lab is to revisit our data splitting. This includes advanced techniques in data spending and transformations/balancing of the outcome variable.
+
+## Exercises
+
+### Exercise 1
+
+For this exercise, we will be using the `diabetes` dataset^[Kaggle Pima Indians Diabetes Dataset ([see website](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database?select=diabetes.csv))] found in the `\data` directory. Take a moment to read the variable definitions in `diabetes_codebook.txt`.
+
+::: {.callout-note icon="false"}
+## Prediction goal
+
+The objective of the dataset is to diagnostically predict whether or not a patient has diabetes (`diabetes`), based on certain diagnostic measurements included in the dataset.
+
+:::
+
+#### Task 1
+
+Begin by loading the data and making sure that it is minimally prepared for fitting models. At minimum we should check that the data is being read in correctly, variables are being typed correctly. Re-type any variables, if needed. Remove any missingness in the **outcome variable only**. Inspect and describe the distribution of the response/target variable. Are there any issues? What is the ratio of the majority to minority classes?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+
+#### Task 2
+
+Is upsampling or downsampling more appropriate and why?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+
+#### Task 3
+
+Perform an initial split of the dataset into training and testing sets using the `rsample` package. How many observations are in your training and testing datasets?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+
+#### Task 4
+
+Balance the training dataset using the appropriate method from the `themis` package. Verify that the new training dataset is balanced.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+
+Why are we only balancing the training dataset here?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+
+#### Task 5
+
+Fold the training data using repeated V-fold cross-validation (5 folds & 3 repeats). Use stratified sampling when folding the data. Be sure to save your training, testing, and folds to an appropriate directory/folder.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+### Exercise 2
+
+For this exercise, we will be using the `credit_fraud` dataset^[Kaggle Credit Card Fraud ([see website](https://www.kaggle.com/datasets/joebeachcapital/credit-card-fraud/data))] found in the `\data` directory. Take a moment to read the variable definitions in `credit_fraud_codebook.txt`.
+
+::: {.callout-note icon="false"}
+## Prediction goal
+
+The objective is to predict whether or not a credit card transaction was a fraud (`class`).
+
+:::
+
+
+#### Task 1
+
+Begin by loading the data and making sure that it is minimally prepared for fitting models. At minimum we should check that the data is being read in correctly, variables are being typed correctly. Re-type any variables, if needed. Remove any missingness in the **outcome variable only**. Inspect and describe the distribution of the response/target variable. Are there any issues? What is the ratio of the majority to minority classes?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+#### Task 2
+
+This dataset is *huge*!^[Given our computational resources and experience.] For purposes of our class, and computational resources, downsample the dataset so that the two classes are at a 10:1 ratio. How many observations are in the new dataset?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+#### Task 3
+
+Perform an initial split of the dataset into training and testing sets using the `rsample` package.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+#### Task 4
+
+Fold the training data using repeated V-fold cross-validation (5 folds & 3 repeats) and stratification. Be sure to save your training, testing, and folds to an appropriate directory/folder.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+
+#### Task 5
+
+A dataset does not have to be perfectly balanced 1:1. As a rule of thumb, a dataset is considered imbalanced if the ratio of majority to minority is over 10:1. Deciding what ratio to upsample/downsample to can be considered a type of tuning. Maybe we wanted a slightly more balanced dataset but did not want to reduce the number of observations any further. Use your downsampled and split data from Task 3 to upsample the training dataset such that the class imbalance ratio is 4:1. Now fold this new training data using repeated V-fold cross-validation (5 folds & 3 repeats) and stratification. Be sure to save your new training and folds to an appropriate directory/folder.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+
+### Exercise 3
+
+For this exercise, we will be using the `rideshare` dataset^[Kaggle Uber & Lyft Dataset ([see website](https://www.kaggle.com/datasets/brllrb/uber-and-lyft-dataset-boston-ma))] found in the `\data` directory. Take a moment to read the variable definitions in `rideshare_codebook.txt`.
+
+::: {.callout-note icon="false"}
+## Prediction goal
+
+The objective is to predict the `price` of an Uber & Lyft rideshare.
+
+:::
+
+#### Task 1
+
+Begin by loading the data and making sure that it is minimally prepared for fitting models. At minimum we should check that the data is being read in correctly, variables are being typed correctly. Re-type any variables, if needed. Remove any missingness in the **outcome variable only**. Inspect and describe the distribution of the response/target variable. 
+
+*Don't transform the response variable yet!*
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+
+#### Task 2
+
+This dataset is *huge*!^[Given our computational resources and experience.] For purposes of our class, and computational resources, the ideal dataset size is between 30k-50k. Downsample the dataset so that the number of observations meets this criteria.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+#### Task 3
+
+We are not sure the optimal transformation for `price` so will instead opt to use either a Yeo-johnson or box-cox transformation (you can technically use either because there are no negative values in price). This requires finding an optimal *lambda*, which means we need to split our data first to prevent data leakage. Perform an initial split of the dataset into training and testing sets using the `rsample` package. Use stratification with the default number of strata. 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+
+#### Task 4
+
+Using the training dataset, perform a Yeo-johnson transformation and report the optimized *lambda* value. We are opting for a Yeo-johnson transformation because there is a simple R function to calculate the inverse.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+#### Task 6
+
+Fold the training data using repeated V-fold cross-validation (5 folds & 3 repeats) and stratification. Be sure to save your training, testing, and folds to an appropriate directory/folder.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::
+
+#### Task 7
+
+A file called `pred_results.csv` is located in the `exercise_3/results` folder. This file contains a column of observed `prices` on the original scale and `.pred` prices that are a result of the `predict()` function on the transformed scale. 
+
+Use your optimized *lambda* to create a column `price_transformed` which is the observed price on the transformed scale and `pred_inverse` which is the predicted price on the original scale.
+
+Report the RMSE on both the transformed and original scale. Also provide an appropriate visualization comparing the observed values to the predicted values on both scales. 
+
+::: {.callout-caution}
+
+These are simulated results for class purposes to demonstrate how to inverse a transformation and your actual observed/predicted results would be different.
+
+:::
+
+::: {.callout-tip icon="false"}
+## Solution
+
+YOUR SOLUTION HERE
+
+:::

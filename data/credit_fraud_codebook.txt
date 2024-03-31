@@ -1,0 +1,3 @@
+class - A dummy variable for whether or not a transaction was a fraud
+amount - amount of credit card transaction
+V1:V28 - numerical input variables which are the principle component feature results of a PCA transformation
