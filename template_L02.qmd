@@ -36,7 +36,7 @@ To link to your github **repo**sitory, appropriately edit the example link below
 
 ## Overview
 
-The goal of this lab is to revisit our data splitting. This includes advanced techniques in data spending and transformations/balancing of the outcome variable.
+The goal of this lab is to revisit data splitting. This includes advanced techniques in data spending and transformations/balancing of the outcome variable.
 
 ## Exercises
 
