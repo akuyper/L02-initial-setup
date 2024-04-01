@@ -8,13 +8,13 @@ This data was sourced from Kaggle ([see website](https://www.kaggle.com/datasets
 - `diabetes_codebook.txt`
 
 ### Exercise 2 
-This data was sourced from the [Kaggle](https://www.kaggle.com/datasets/joebeachcapital/credit-card-fraud/data)
+This data was sourced from Kaggle [see website](https://www.kaggle.com/datasets/joebeachcapital/credit-card-fraud/data).
 
 - `credit_fraud.rds`
 - `credit_fraud_codebook.txt`
 
-### Exercise 2 
-This data was sourced from the [Kaggle](https://www.kaggle.com/datasets/joebeachcapital/credit-card-fraud/data)
+### Exercise 3
+This data was sourced from Kaggle [see website](https://www.kaggle.com/datasets/joebeachcapital/credit-card-fraud/data).
 
 - `rideshare.rda`
 - `rideshare_codebook.txt`
