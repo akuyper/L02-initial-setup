@@ -248,7 +248,7 @@ YOUR SOLUTION HERE
 
 :::
 
-#### Task 6
+#### Task 5
 
 Fold the training data using repeated V-fold cross-validation (5 folds & 3 repeats) and stratification. Be sure to save your training, testing, and folds to an appropriate directory/folder.
 
@@ -259,7 +259,7 @@ YOUR SOLUTION HERE
 
 :::
 
-#### Task 7
+#### Task 6
 
 A file called `pred_results.csv` is located in the `exercise_3/results` folder. This file contains a column of observed `prices` on the original scale and `.pred` prices that are a result of the `predict()` function on the transformed scale. 
 
