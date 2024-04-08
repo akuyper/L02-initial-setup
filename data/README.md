@@ -3,7 +3,6 @@
 ### Exercise 1 
 This data was sourced from Kaggle ([see website](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database?select=diabetes.csv)).
 
-- `diabetes.csv`
 - `diabetes.rds`
 - `diabetes_codebook.txt`
 
@@ -19,3 +18,6 @@ This data was sourced from Kaggle [see website](https://www.kaggle.com/datasets/
 - `rideshare.rda`
 - `rideshare_codebook.txt`
 
+### Example Datasets
+
+`example_data` contains several datasets that will be used in examples completed during class time
