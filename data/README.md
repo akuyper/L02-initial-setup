@@ -17,7 +17,3 @@ This data was sourced from Kaggle [see website](https://www.kaggle.com/datasets/
 
 - `rideshare.rda`
 - `rideshare_codebook.txt`
-
-### Example Datasets
-
-`example_data` contains several datasets that will be used in examples completed during class time
