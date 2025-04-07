@@ -1,5 +1,5 @@
 # L02 Initial Setup ----
-# Exercise 1 ----
+# Exercise 3 ----
 # Initial data checks & data splitting
 
 # load packages ----

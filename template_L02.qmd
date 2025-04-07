@@ -7,6 +7,7 @@ date: today
 
 format:
   html:
+    theme: cosmo
     toc: true
     toc-depth: 4
     toc-location: left
@@ -16,10 +17,10 @@ format:
 
 execute:
   warning: false
-  
+
 from: markdown+emoji
 reference-location: margin
-citation-location: margin
+citation-location: margin 
 ---
 
 
